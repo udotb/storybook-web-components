@@ -1,0 +1,40 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta title="Notification/Introductions"/>
+
+# Notification System
+
+`jsys-notification` system provides a alert message and pop-up component that is easily accessible.
+
+### Alert Message
+
+```
+<alert-message status="show" is="${type}" message="${message}"></alert-message>
+```
+### Pop-up
+
+```
+<pop-up show="${show}" width="${width}"><div slot="open-modal"></div></pop-up>
+```
+
+## Features
+
+| Attributes       | Details                                                               |
+| -----------------| --------------------------------------------------------------------- |
+| ***Alert Message***                                                                      |
+| message          | User can set his own message that he wants to display                 |
+| is               | User can select what kind of alert message he wants to display        |
+| ***Pop-up***                                                                             |
+| width            | User can set the width of the modal                                   |
+| show             | User can also set whether he wants to see the modal or not            |
+
+
+
+## Packages
+
+| Package            | Description                                                                                           |
+| ------------------ | --------------------------------------------------------------------------------------- |
+| Alert Message      | It will display an alert message (success or error) with customize attributes           |
+| Pop-up             | It will pop-up the modal and user can modify the modal as per needs                     |
+
+

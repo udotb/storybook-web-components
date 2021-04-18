@@ -1,0 +1,91 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta title="View/Introductions"/>
+
+# View System
+
+`jsys-view` system provides many view components used in any html page for UI, that are easily accessible.
+
+### Card Component
+
+```
+<card-component background-color="${backgroundColor}" width="${width}" height="${height}" text-color="${textColor}"></card-component>
+```
+### Pill Badge
+
+```
+<pill-badge background="${backgroundColor}" color="${crossColor}" show-cross-button></pill-badge>
+```
+
+### Resizeable Columns
+
+```
+<resizeable-columns><div slot="first">Column 1</div><div slot="second">Column 2</div></resizeable-columns>
+```
+### Round Loader
+
+```
+<round-loader></round-loader>
+```
+### Side Bar
+
+```
+<sidebar-component></sidebar-component>
+```
+### Tool Tip
+
+```
+<tool-tip trim="${trim}" tooltip="${tooltip}" content="${content}"></tool-tip>
+```
+### Top Nav
+
+```
+<top-nav background-color="${backgroundColor}"></top-nav>
+```
+
+### Task Card
+
+```
+<task-card text="${task}" background-color="${backgroundColor}" text-color="${textColor}"></task-card>
+```
+
+
+## Features
+
+| Attributes       | Details                                                               |
+| -----------------| --------------------------------------------------------------------- |
+| ***Card Component***                                                                     |
+| text             | User can set his own text that he wants to see inside the card        |
+| background-color | User can set his own card body background color that he wants         |
+| height           | User can set his own card body height that he wants                   |
+| width            | User can set his own card body width that he wants                    |
+| text-color       | User can set his own card body text color that he wants               |
+| image-path       | User can set his own **`svg`** image inside the path card body        |
+| ***Pill-Badge***                                                                         |
+| background        | User can set his own pill-badge body background color that he wants  |
+| color             | User can set his own color for cross sign in the pill-badge          |
+| ***Tool Tip***                                                                           |
+| trim              | User can set his own range of number of letters                      |
+| tooltip           | User can set his own text for the hovered tool tip                   |
+| content           | User can his own display text                                        |
+| ***Top Nav***                                                                            |
+| background-color  | User can set his own background color that he wants                  |
+| ***Task Card***                                                                          |
+| background-color  | User can set his own background color that he wants                  |
+| text-color        | User can set his own text color that he wants                        |
+| text              | User can set his own text that he wants                              |
+
+
+## Packages
+
+| Package            | Description                                                                             |
+| ------------------ | --------------------------------------------------------------------------------------- |
+| Card Component     | It will display a card with customize attributes                                        |
+| Pill-Badge         | It will pop-up a cross-able pill-badge that user can modify as per need                 |
+| Resizable Columns  | It will display a columns which size can be altered as per need.                        |
+| Round Loader       | Indicate the loading state of a component or page or a project                          |
+| Side bar           | It will display a side bar component that has different links and checkboxes.           |
+| Tool Tip           | It will display an element in which, when hovering over a element, a text box displays information about that element, that user can modify as per need |
+| Top Nav            | It will display a responsive navigation header, the navbar. Includes support for branding & navigation. |
+
+

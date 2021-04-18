@@ -1,0 +1,41 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta title="File/Introductions"/>
+
+# File Selector System
+
+`jsys-file-selector` system provides a file selector and uploader component that is easily accessible.
+
+### File Selector
+
+```
+<file-selector><button-component content="Select" background="primary" slot="upload-button"></button-component></file-selector>
+```
+### File Uploader
+
+```
+<file-upload><span slot="upload-button"><button-component content="Upload file" color="primary"></button-component></span></file-upload>
+```
+
+### URL Image Uploader
+
+```
+<url-image-upload multiple="false" placeholder="Paste image url here..." validate="true"></url-image-upload>
+```
+
+## Features
+
+| Attributes       | Details                                                               |
+| -----------------| --------------------------------------------------------------------- |
+| ***Url Image Uploader***                                                                 |
+| Multiple         | User can upload multiple or single image by choosing true or false    |
+
+## Packages
+
+| Package            | Description                                                                                           |
+| ------------------ | ------------------------------------------------------------- |
+| File Selector      | It will select image file or text file from your PC           |
+| File Uploader      | It will upload selected image or text file(s) from your PC    |
+| Url Image Uploader | It will get any image type url and upload it                  |
+
+

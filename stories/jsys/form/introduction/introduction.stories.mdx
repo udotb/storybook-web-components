@@ -1,0 +1,154 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta title="Form/Introductions"/>
+
+# Form System
+
+The Form System allows you to create complex forms with various validations in an easy way.
+
+### Autogrow Text Area
+``` 
+<autogrow-textarea rows="${rows}"></autogrow-textarea>
+```
+
+### Checkbox
+``` 
+<check-box></check-box>
+```
+
+### Date Picker
+``` 
+<date-picker required placeholder="Select start date"></date-picker><date-picker required placeholder="Select End date"></date-picker>
+```
+
+### Time Picker
+```
+<time-picker required placeholder="Select start time"></time-picker><time-picker required placeholder="Select End time"></time-picker>
+```
+
+### Email Input Field
+``` 
+<email-address placeholder="${placeholder}" onfocusout-validate="${onfocusValidate}" value="${value}"></email-address>
+```
+
+### Form Field
+``` 
+<form-field><label>Email</label><email-address required placeholder="Enter your email" onfocusout-validate="true"></email-address><button-component content="Submit" is="primary"></button-component></form-field>
+```
+
+### Input Field
+``` 
+<input-field placeholder="${placeholder}" background-color="${backgroundColor}" value="${value}" text-color="${textColor}" font-size="${fontSize}px"></input-field>
+```
+
+### Number Input Field
+``` 
+<input-number placeholder="${placeholder}" value="${value}" min="${min}" max="${max}"></input-number>
+```
+
+### Text Input Field
+```
+<input-text placeholder="${placeholder}" value="${value}" min="${min}" max="${max}" validate="true"></input-text>
+```
+
+### Password Input Field
+```
+<password-field placeholder="${placeholder}" background-color="${backgroundColor}" text-color="${textColor}" font-size="${fontSize}px"></password-field>
+```
+
+### Search Bar Input Field
+
+```
+<search-bar-input-field background-color="${backgroundColor}" text-color="${textColor}" width="${width}%"></search-bar-input-field>
+```
+
+### Select Field
+```
+<select-field><select-option value="option1">Option 1</select-option><select-option value="option2">Option 2</select-option></select-field>'
+```
+
+### Tag Input
+```
+<tag-input hint="true"></tag-input>
+```
+
+### Validation Error
+```
+<validation-error text="${errorText}" text-color="${textColor}" font-size="${fontSize}px"></validation-error>
+```
+
+
+## Features
+
+- Built in validation for error/warning/info/success
+- Formatting of values
+- Accessible
+
+| Attributes               | Details                                                               |
+| -----------------        | --------------------------------------------------------------------- |
+| ***Autogrow Text Area***                                                                         |
+| rows                     | User can set his own number of rows according to the data             |
+| ***Email Input Field***                                                                          |
+| placeholder              | User can set his own placeholder text within the input field          |
+| validate                 | User can choose either he wants to validate email or not              |
+| onfocusout-validate      | User can choose validation if focus out the input field               |
+| value                    | User can set his own value inside the field                           |
+| ***Input Field***                                                                                |
+| placeholder              | User can set his own placeholder text within the field                |
+| background-color         | User can set his own background color of the field                    |
+| text-color               | User can set his own text color of the text inside the field          |
+| focused                  | User can his own time for how long field remains selected             |
+| font-size                | User can set is own font size for the text inside the field           |
+| value                    | User can his own value in the field                                   |
+| ***Input Number Field*** |                                                                       |
+| placeholder              | User can set his own placeholder within the field                     |
+| min                      | User can set minimum value for the numbers                            |
+| max                      | User can set maximum value for the numbers                            |
+| required                 | User can set either the field is required field or not                |
+| validate                 | User can choose either he wants to validate field or not              |
+| disable                  | User can choose either he wants to shown but disable field or not     |
+| value                    | User can his own value in the field                                   |
+| ***Input Text Field***                                                                           |
+| placeholder              | User can set his own placeholder within the field                     |
+| min                      | User can set minimum value for the text                               |
+| max                      | User can set maximum value for the text                               |
+| required                 | User can set either the field is required field or not                |
+| validate                 | User can choose either he wants to validate field or not              |
+| disable                  | User can choose either he wants to shown but disable field or not     |
+| value                    | User can his own value in the field                                   |                                                                            |
+| border-none              | User can set either he wants borders of the field or not              |
+| ***Password Input Field***                                                                       |
+| placeholder              | User can set his own placeholder text within the field                |
+| background-color         | User can set his own background color of the field                    |
+| text-color               | User can set his own text color of the password text inside the field |
+| focused                  | User can his own time for how long field remains selected             |
+| font-size                | User can set is own font size for the password text inside the field  |
+| ***Search Bar Input Field***                                                                     |
+| background-color         | User can set his own background color of the field                    |
+| text-color               | User can set his own text color of the text inside the field          |
+| width                    | User can his own value in the field                                   |
+| ***Validation Error***                                                                           |
+| text                     | User can set his error message text.                                  |
+| text-color               | User can set his own text color of the text inside the field          |
+| font-size                | User can set is own font size for the error message text              |
+
+
+## Packages
+
+| Package                | Description                                                                                                                             |
+| ------------------     | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Autogrow Text Area     | It is a a multi-line text input control. It is modified to only be resizable vertically as horizontal Number of rows can be customized. |
+| Check Box              | The checkbox is shown as a square box that is ticked (checked) when activated.                                                          |
+| Date Picker            | It will display a drop down by which you can pick any date very easily.                                                                 |
+| Time Picker            | It will display a drop down by which you can select any time very easily.                                                               |
+| Email Input Field      | It is used for input fields that should contain an e-mail address. It contains many attributes.                                         |
+| Form Field             | It is used as a form field that can be easily used in any form.                                                                         |
+| Input Field            | Input field where the user can enter data.                                                                                              |
+| Text Input Field       | Input field where the user can enter only text data.                                                                                    |
+| Number Input Field     | Input field where the user can enter only numeric data.                                                                                 |
+| Password Field         | Input field where the user can enter only password.                                                                                     |
+| Search Bar Input Field | A rounded border bar that can be used as a searchbar.                                                                                   |
+| Tag Input              | Input field where the user can enter tags data. Tag can be entered by hitting enter or comma.                                           |
+| Validation Error       | It will display a error text message which user wants to see anywhere.                                                                  |
+
+
